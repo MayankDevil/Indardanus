@@ -28,22 +28,22 @@
 
 - Clone : https://github.com/user/website-0.git
 
-- Download : https://github.com/user/website-0/main.zip
+- Download : https://github.com/MayankDevil/website-0/archive/refs/heads/main.zip
 
 ---
 
 ### Home ViewPort
 
-[]()
+![Alt text](https://mastermayank.github.io/website-0/data/boo.svg "HomePage")
 
 ### Responsive
 
-     **Breakpoints** { 375 | 576 | 768 | 992 | 1200 }
+**Breakpoints** { 375 | 576 | 768 | 992 | 1200 }
 
 ### Theme Mode
 
-     Switch between dark and light that help to more effective view as day Nidht and Battery Saving.
+Switch between dark and light that help to more effective view as day Nidht and Battery Saving.
 
 ### Theme
 
-> it theme difficult to set becuse it is colour website but we are meke it simple and while theme with crimson and multiple colour touch
+it theme difficult to set becuse it is colour website but I am make it simple and while theme with multiple colour theme
