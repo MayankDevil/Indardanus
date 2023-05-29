@@ -24,9 +24,9 @@
 
 - CopyRight : { Indardanus }
 
-- URL : https://user.github.io/website-0/
+- URL : https://mayankdevil.github.io/website-0/
 
-- Clone : https://github.com/user/website-0.git
+- Clone : https://github.com/MayankDevil/website-0.git
 
 - Download : https://github.com/MayankDevil/website-0/archive/refs/heads/main.zip
 
