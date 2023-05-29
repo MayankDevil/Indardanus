@@ -34,7 +34,7 @@
 
 ### Home ViewPort
 
-![Alt text](https://mastermayank.github.io/website-0/data/boo.svg "HomePage")
+![Alt text](https://mastermayank.github.io/website-0/data/Indardanus.png "HomePage")
 
 ### Responsive
 
