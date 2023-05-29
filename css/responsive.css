@@ -1,0 +1,172 @@
+/*
+-   Website-0 "indardanus"
+-   AllRightReserved Mayank
+-   Designed by Mayank
+-   CSS : css/style
+*/
+/*
+	1200PX SCREEN ----------------------
+*/
+@media screen and (max-width:1200px)
+{
+	
+}
+/*
+	992PX SCREEN ----------------------
+*/
+@media screen and (max-width:992px)
+{
+	#header .row
+	{
+		width: 90%;
+		margin:auto;
+	}
+}
+/*
+	768PX SCREEN ----------------------
+*/
+@media screen and (max-width:768px)
+{
+	#header
+	{
+		min-height: auto;
+	}
+	section
+	{
+		width: 90%;
+		margin:auto;
+		padding: 5vh 0;
+		border-bottom: 1px solid var(--gray);
+	}
+	.row
+	{
+		display: block;
+		grid-template-columns: 1fr;
+	}
+	/* SERVICE */
+	#header .service
+	{
+		width: 80%;
+		margin:auto 1rem;
+	}
+	/* CONTENT */
+	h1
+	{
+		text-align: right;
+		padding:2rem 0;
+		font:15vw 'gabriola';
+	}
+	h2
+	{
+		padding: 1rem 0;
+	}
+	h3
+	{
+		font:1.2rem 'calibri';
+	}
+	p
+	{
+		padding: 1rem 0 10vh 0;
+	}
+	/* COLOR TESERT */
+	#colorTester
+	{
+		width: 100%;
+		margin:2rem auto;
+		grid-template-columns: 40% 40% 20%;
+	}
+	/* THEMES */
+	#themes
+	{
+		height: 60vh;
+		display: grid;
+		grid-template-rows: 8fr 2fr;
+	}
+	.clrBox
+	{
+		padding-top: 30vh;
+		text-align: center;
+		font-size:1rem;
+	}
+	#compareButton
+	{
+		display: grid;
+		place-content: space-between;
+	}
+	#compareButton > div
+	{
+		display: block !important;
+		width: 100%;
+		/* border:1px solid green; */
+	}
+	#compareButton > div:last-child
+	{
+		padding: 1rem 0;
+		grid-row:1/2;
+	}
+}
+/*
+	576PX SCREEN ----------------------
+*/
+@media screen and (max-width:576px)
+{
+	#copyright
+	{
+		display: grid;
+		place-content: start;
+	}
+	#copyright > div
+	{
+		padding: 0.5rem 5vw;
+	}
+	/* SECTION */
+	h2
+	{
+		word-spacing: auto;
+	}
+	/* COMBINATION */
+	
+	/* COLOR NAME */
+	#namepackage
+	{
+		grid-template-columns:repeat(138,0.6%);
+	}
+	/* GRAPH CHAR */
+	.colorGraph
+	{	
+		padding: 0.3rem;
+		clip-path:none;
+	}
+}
+/*
+	350PX SCREEN ----------------------
+*/
+@media screen and (max-width:375px)
+{
+	/* FOOTER */
+	#copyright
+	{
+		padding: 1.5rem 3vw;
+	}
+}
+/*
+THE END =============================
+*/
+
+/*
+animation: colorChange 5s linear infinite alternate-reverse;
+@keyframes colorChange {
+	10%{
+		background:linear-gradient(to right,#eb3b5a,#fa8231,#f7b731);
+	}
+	30%{
+		background:linear-gradient(to right,#a55eea,#eb3b5a,#2bcbcc);
+	}
+	50%{
+		background:linear-gradient(to right,#a55eea,#2bcbcc,#833471);
+	}
+	100%{
+		background:linear-gradient(to left,#00a8ff,#1abc9c,#2ecc71);
+	}
+}
+*/

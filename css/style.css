@@ -1,0 +1,433 @@
+/*
+-   Website-0 "indardanus"
+-   AllRightReserved Mayank
+-   Designed by Mayank
+-   CSS : css/style
+*/
+*
+{
+	user-select: none;
+	margin:0;
+	padding:0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	color:var(--dark);
+	text-decoration: none;
+	border:none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+:root
+{
+	--black:#222f3e;
+	--dark:#34495e;
+	--gray:#7f8fa6;
+	--light:#f0f4f4;
+	--white:#ffffff;
+	--primary:#dc143c;
+	--secondary:#00ffcc;
+}
+::-webkit-scrollbar
+{
+	width: 10px;
+	background: var(--black);
+}
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(to top,#20c997,#17a2b8);
+}
+::selection
+{
+	background: transparent;
+}
+.row
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: auto;
+}
+/*
+	BODY CSS ----------------------------
+*/
+.dark
+{
+	--black:#f5f6fa;
+	--dark:#eee;
+	--gray:#7f8fa6;
+	--light:#34495e;
+	--white:#222f3e;
+	--primary:#dc143c;
+	--secondary:#00ffcc;
+}
+body
+{
+	background: var(--white);
+}
+#mother_container
+{
+	width: 100%;
+}
+.colorSlide
+{
+	padding: 5rem;
+	background: linear-gradient(to right, purple,crimson,salmon,greenyellow,lime,cyan,springgreen);
+	clip-path:polygon(0% 0%, 0 100%, 0% 100%, 15% 90%, 25% 60%, 40% 40%, 50% 70%, 65% 30%, 80% 30%, 90% 0);
+}
+.colorGraph
+{
+	padding: 3rem;
+	background: linear-gradient(to right, purple,crimson,salmon,greenyellow,lime,cyan,springgreen);
+	clip-path:polygon(1% 100%, 0% 100%,  99% 100%, 95% 0%,
+		90% 50%, 85% 50%, 83% 60%,
+		80% 10%, 77% 50%,
+		70% 50%, 67% 70%,
+		60% 80%, 55% 30%,
+		50% 50%, 45% 20%,
+		40% 70%, 38% 80%, 35% 50%,
+		30% 30%, 29% 50%, 24% 75%,
+		20% 50%, 18% 20%, 15% 80%,
+		10% 0%, 7% 50%, 4% 30%
+	);
+}
+/*
+	HEADER CSS --------------------------
+*/
+#header
+{
+	min-height:80vh;
+}
+#header .row
+{
+	display: gird;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin:auto;
+}
+h1
+{
+	padding: 3rem 0;
+	font:10vw 'gabriola';
+	color:var(--black);
+	text-shadow:5px 5px 10px var(--gray);
+}
+#header .service
+{
+	display: grid;
+	place-content: center right;
+	border-right: 2px groove var(--gray);
+}
+.btn
+{
+	display: inline-block;
+	margin:0.5rem;
+	padding: 1rem 2rem;
+	text-align: right;
+}
+.btn::after
+{
+	content: '';
+	width:10px;
+	height: auto;
+	margin: 2rem;
+	margin-right: -3.2rem;
+	padding: 0px 8px;
+	background: var(--white);
+	border:2px inset var(--primary);
+	border-radius:2rem;
+}
+.btn:hover
+{
+	font-weight: bold;
+}
+.btn:hover::after
+{
+	background: var(--secondary);
+	border-style:solid;
+	border-color: var(--white);
+}
+/* COLOR TESTER */
+#colorTester
+{
+	width: 80%;
+	margin:3rem 0;
+	display: grid;
+	grid-template-columns: 50% 30% 20%;
+	box-shadow: 1px 1px 5px var(--gray);
+}
+#clr_ent
+{
+	padding: 5px;
+	text-align: center;
+	font: 2rem 'arial';
+	background: var(--light);
+}
+#clr_ent:hover
+{
+	color:var(--gray);
+}
+#clr_btn
+{
+	width: 100%;
+	height: auto;
+}
+#clr_fld
+{
+	text-align: center;
+	font:1.2rem 'arial';
+	color:var(--black);
+	background: var(--white);
+}
+#clr_fld::selection
+{
+	background:#80bfff;
+}
+/*
+	THEORY CSS --------------------------
+*/
+#colourwheel
+{
+	padding: 1rem;
+	font: 1rem 'arial';
+}
+#combination
+{
+	display: grid;
+	grid-gap:1rem;
+	padding: 2rem 1rem;
+}
+label input[type="radio"]:checked ~ i
+{
+	color:var(--black);
+	font-weight: bold;
+}
+.clrpic
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+/*
+	THEME CSS ---------------------------
+*/
+#themes
+{
+	height: 50vh;
+	display: grid;
+	grid-template-rows: 9fr 1fr;
+	background: var(--white);
+}
+#compareBox
+{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	box-shadow: 1px 1px 5px var(--gray);
+}
+.clrBox
+{
+	padding-top:40vh;
+	resize: none;
+	text-align: center;
+	font-size:1.5rem;
+	color:var(--white);
+	text-shadow:1px 1px 3px var(--dark);
+}
+#compareButton
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.ent_flg
+{
+	margin:0.5rem;
+	padding: 0.2rem 0.5rem ;
+	font-size: 1.5rem;
+	color: var(--light);
+	background: var(--black);
+	border-radius: 5px;
+}
+.ent_flg:hover
+{
+	background: var(--dark);
+}
+span
+{
+	margin:1rem;
+}
+#selectFrame
+{
+	padding: 1rem;
+	font-size:1rem;
+	color:var(--dark);
+	border:1px solid var(--gray);
+}
+option
+{
+	padding: 1rem;
+}
+#fulscrn_btn,
+#genrate_btn
+{
+	margin:1rem auto;
+	padding: 1rem 2rem;
+	font:bold 1rem 'calibri';
+	color:var(--black);
+	background:linear-gradient(to right,#eb3b5a,#fa8231,#f7b731);
+}
+#genrate_btn:hover
+{
+	box-shadow: 1px 1px 3px var(--gray);
+}
+#fulscrn_btn
+{
+	background:linear-gradient(to left,#00a8ff,#1abc9c,#2ecc71);
+}
+#fulscrn_btn:hover
+{
+	box-shadow: 1px 1px 3px var(--gray);
+}
+/*
+	NICE CSS ----------------------------
+*/
+section
+{
+	width: 80%;
+	margin:auto;
+	padding: 10vh 0;
+	border-bottom: 5px solid var(--gray);
+}
+h2
+{
+	padding: 1rem;
+	text-transform: uppercase;
+	word-spacing: 5px;
+	font:1.5rem 'arial';
+	color:var(--black);
+}
+p
+{
+	padding: 2rem;
+	line-height: 30px;
+	font-size:1.1rem;
+}
+#nicepackage
+{
+	display: grid;
+	grid-template-columns: repeat(5,20%);
+}
+.package1
+{
+	color: transparent;
+	display: grid;
+	place-content: center;
+}
+.package1:fullscreen,
+.package2:fullscreen,
+.package3:fullscreen,
+.package4:fullscreen
+{
+	text-align: center;
+	font-size: 10vh;
+	color:var(--light);
+    text-shadow: 1px 1px 5px var(--black);
+}
+/*
+	NAME CSS ----------------------------
+*/
+#namepackage
+{
+	display:grid;
+	grid-template-columns:repeat(138,0.7%);
+}
+.package2
+{
+	height: 10vh;
+	text-transform:uppercase;
+	text-align: center;
+	font-size: 1rem;
+	color: transparent;
+}
+#color_plate
+{
+	width: 100%;
+	height: 40vh;
+	background:black;
+}
+/*
+	CONTRAST CSS ----------------------------
+*/
+#contrastpackage
+{
+	display: gird;
+	box-shadow: 1px 1px 3px var(--gray);
+}
+.package3
+{
+	width: 10%;
+	height: 20vh;
+	color: transparent;
+}
+/*
+	BOOTSTRAP CSS ---------------------------
+*/
+#bootpackage
+{
+	display: gird;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.package4
+{
+	width: 14%;
+	height: 10vh;
+	color: transparent;
+}
+/*
+FOOTER CSS --------------------------
+*/
+#footer
+{
+	margin-top: 2rem;
+}
+#scrl_btn
+{
+	display: inline-block;
+	width: 50px;
+	height: auto;
+	position: fixed;
+	z-index: 10;
+	right:2vw;
+	bottom: 5vh;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
+	background: var(--primary);
+	border-radius: 5px;
+	transform: rotate(0deg) scale(0.8);
+}
+#scrl_btn:hover
+{
+	transition: all linear 0.5s;
+	transform: rotate(360deg) scale(1);
+}
+#copyright
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 10vw;
+	font: 1.2rem 'arial';
+	background: var(--light);
+}
+#copyright a
+{
+	display: inline-block;
+	font-weight: bold;
+}
+/*
+	THE END =============================
+*/
