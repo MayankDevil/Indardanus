@@ -32,7 +32,7 @@
 
 ---
 
-### Home ViewPort
+#### Home Page
 
 ![Alt text](./data/Indardanus.png "HomePage")
 
@@ -42,8 +42,8 @@
 
 ### Theme Mode
 
-Switch between dark and light that help to more effective view as day Nidht and Battery Saving.
+_Switch between dark and light that help to more effective view as day Nidht and Battery Saving._
 
 ### Theme
 
-it theme difficult to set becuse it is colour website but I am make it simple and while theme with multiple colour theme
+_it theme difficult to set becuse it is colour website but I am make it simple and while theme with multiple colour theme._
