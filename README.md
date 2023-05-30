@@ -8,7 +8,7 @@
 
 - Update : 29-05-2023
 
-- Status : Reset
+- Status : Rest
 
 - TecStack : { HTML | CSS | JavaScript }
 
@@ -32,7 +32,7 @@
 
 ---
 
-#### Home Page
+### Home Page
 
 ![Alt text](./data/Indardanus.png "HomePage")
 
@@ -40,10 +40,10 @@
 
 **Breakpoints** { 375 | 576 | 768 | 992 | 1200 }
 
-### Theme Mode
+## Theme Mode
 
 _Switch between dark and light that help to more effective view as day Nidht and Battery Saving._
 
-### Theme
+## Theme
 
 _it theme difficult to set becuse it is colour website but I am make it simple and while theme with multiple colour theme._
