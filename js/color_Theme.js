@@ -13,7 +13,7 @@ try
     */ 
     var flag_active = new Array(true,true,true,true,true); 
     /*
-        Get Color Funtion } -------------------------------------------------------
+        Get Color Funtion }--------------------------------------------------------
         
         = it return hexadecimal color code
     */ 
@@ -57,7 +57,7 @@ try
         }
     }
     /*
-        Set Flag Function } ------------------------------------------------------
+        Set Flag Function }-------------------------------------------------------
         
         = if flag active set false else true
     */

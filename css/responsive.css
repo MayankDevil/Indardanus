@@ -54,7 +54,7 @@
 	{
 		text-align: right;
 		padding:2rem 0;
-		font:15vw 'gabriola';
+		font-size:15vw;
 	}
 	h2
 	{
@@ -62,7 +62,7 @@
 	}
 	h3
 	{
-		font:1.2rem 'calibri';
+		font-size: 1.2rem;
 	}
 	p
 	{
@@ -78,13 +78,12 @@
 	/* THEMES */
 	#themes
 	{
-		height: 60vh;
 		display: grid;
 		grid-template-rows: 8fr 2fr;
 	}
 	.clrBox
 	{
-		padding-top: 30vh;
+		padding: 0;
 		text-align: center;
 		font-size:1rem;
 	}
@@ -97,7 +96,6 @@
 	{
 		display: block !important;
 		width: 100%;
-		/* border:1px solid green; */
 	}
 	#compareButton > div:last-child
 	{

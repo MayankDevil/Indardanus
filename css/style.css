@@ -9,7 +9,8 @@
 	user-select: none;
 	margin:0;
 	padding:0;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
 	color:var(--dark);
 	text-decoration: none;
 	border:none;
@@ -108,7 +109,8 @@ body
 h1
 {
 	padding: 3rem 0;
-	font:10vw 'gabriola';
+	font-size:10vw;
+	font-weight: lighter;
 	color:var(--black);
 	text-shadow:5px 5px 10px var(--gray);
 }
@@ -160,7 +162,7 @@ h1
 {
 	padding: 5px;
 	text-align: center;
-	font: 2rem 'arial';
+	font-size: 2rem;
 	background: var(--light);
 }
 #clr_ent:hover
@@ -175,7 +177,7 @@ h1
 #clr_fld
 {
 	text-align: center;
-	font:1.2rem 'arial';
+	font-size:1.2rem;
 	color:var(--black);
 	background: var(--white);
 }
@@ -189,7 +191,7 @@ h1
 #colourwheel
 {
 	padding: 1rem;
-	font: 1rem 'arial';
+	font-size: 1rem;
 }
 #combination
 {
@@ -220,18 +222,18 @@ label input[type="radio"]:checked ~ i
 }
 #compareBox
 {
-	width: 100%;
 	height: 100%;
 	display: grid;
-	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	box-shadow: 1px 1px 5px var(--gray);
 }
 .clrBox
 {
-	padding-top:40vh;
+	padding: 2rem 1rem;
+	writing-mode: sideways-lr;
 	resize: none;
-	text-align: center;
-	font-size:1.5rem;
+	text-align: right;
+	font-size:1rem;
 	color:var(--white);
 	text-shadow:1px 1px 3px var(--dark);
 }
@@ -274,7 +276,8 @@ option
 {
 	margin:1rem auto;
 	padding: 1rem 2rem;
-	font:bold 1rem 'calibri';
+	font-weight:bold;
+	font-size:1rem;
 	color:var(--black);
 	background:linear-gradient(to right,#eb3b5a,#fa8231,#f7b731);
 }
@@ -305,7 +308,8 @@ h2
 	padding: 1rem;
 	text-transform: uppercase;
 	word-spacing: 5px;
-	font:1.5rem 'arial';
+	font-size:1.5rem;
+	font-weight: normal;
 	color:var(--black);
 }
 p
@@ -420,7 +424,7 @@ FOOTER CSS --------------------------
 	align-items: center;
 	justify-content: space-between;
 	padding: 1.5rem 10vw;
-	font: 1.2rem 'arial';
+	font-size: 1rem;
 	background: var(--light);
 }
 #copyright a
