@@ -1,8 +1,8 @@
 /*
 -   Website-0 "indardanus"
--   AllRightReserved Mayank
--   Designed by Mayank
--   JavaScript : js/color_Display
+-   Copyright by https://github.com/MayankDevil/
+-   Designed | Developed by Mayank
+-   JavaScript : ./js/color_Display.js
 */
 try
 {
@@ -61,9 +61,11 @@ try
 			}	
 		}
 	}
+	
 	/*
 		[ CALL FUNCTION ]----------------------------------------------------------------
 	*/ 
+	
 	colorDisplay('namepackage',colorname_data,'package2','color_plate');	// color name
 
 	colorDisplay('nicepackage',hexadecimal_data,'package1',empty);		// hexadecimal

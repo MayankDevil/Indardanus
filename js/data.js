@@ -1,8 +1,8 @@
 /*
 -   Website-0 "indardanus"
--   AllRightReserved Mayank
--   Designed by Mayank
--   JavaScript : js/data
+-   Copyright by https://github.com/MayankDevil/
+-   Designed | Developed by Mayank
+-   JavaScript : ./js/data
 */
 try
 {
@@ -36,12 +36,14 @@ try
         "navajowhite","bisque","moccasin","peachpuff","cornsilk","ivory",
         "blanchedalmond","darkkhaki","khaki","palegoldenrod","lightgoldenrodyellow",
         "lemonchiffon","lightyellow","beige"
-    ];
-     /*
+    ]
+
+    /*
         ------------------
         [ HexaDecimal Data ] ============================================================
         ------------------
     */ 
+    
     var hexadecimal_data = [
         "00a8ff","1abc9c","2ecc71","9b59b6","34495e",
 		"0097e6","16a085","27ae60","8e44ad","2c3e50",
@@ -57,46 +59,39 @@ try
 		//
 		"833471","a55eea","686de0","30336b","95afc0",
 		"6f1e51","8854d0","4834d4","130f40","535c68"
-    ];
-     /*
+    ]
+
+    /*
         ------------------
         [ BootStrap Data ] ===============================================================
         ------------------
-    */ 
+    */
+
     var bootstrap_data = [
-		"6c757d",
-		"f8f9fa",
-		"e83e8c",
-		"20c997",
-		"17a2b8",
-		"6610f2",
-		"fd7e14",
-		"343a40",
-		"ffffff",
-		"dc3545",
-		"28a745",
-		"007bff",
-		"6f42c1",
-		"ffc107"
-	];
-     /*
+        "cfe2ff","9ec5fe","6ea8fe","3d8bfd","0d6efd","0a58ca","084298","052c65","031633",
+        "e0cffc","c29ffa","a370f7","8540f5","6610f2","520dc2","3d0a91","290661","140330",
+        "e2d9f3","c5b3e6","a98eda","8c68cd","6f42c1","59359a","432874","2c1a4d","160d27",
+        "f7d6e6","efadce","e685b5","de5c9d","d63384","ab296a","801f4f","801f4f","2b0a1a",
+        "f8d7da","f1aeb5","ea868f","e35d6a","dc3545","b02a37","842029","58151c","2c0b0e",
+        "ffe5d0","fecba1","feb272","fd9843","fd7e14","ca6510","984c0c","653208","331904",
+        "fff3cd","ffe69c","ffda6a","ffcd39","ffc107","cc9a06","997404","664d03","332701",
+        "d1e7dd","a3cfbb","75b798","479f76","198754","146c43","0f5132","0a3622","051b11",
+        "d2f4ea","a6e9d5","79dfc1","4dd4ac","20c997","1aa179","13795b","0d503c","06281e",
+        "cff4fc","9eeaf9","6edff6","3dd5f3","0dcaf0","0aa2c0","087990","055160","032830",
+        "f8f9fa","e9ecef","dee2e6","ced4da","adb5bd","6c757d","495057","343a40","212529"
+    ]
+    
+    var old_bootstrap_data = ["6c757d","f8f9fa","e83e8c","20c997","17a2b8","6610f2","fd7e14","343a40","ffffff","dc3545","28a745","007bff","6f42c1","ffc107"]
+    
+    /*
         ------------------
         [ Contrast Data ] ===============================================================
         ------------------
     */ 
-	var contrast_data = [
-        "000000",
-        "10151b",
-        "20252b",
-        "30353b",
-        "6c757d",
-        "ced6e0",
-        "dfe6e9",
-        "f0f4f4",
-        // "efefef",
-        "f9f8f7",
-        "ffffff"
-    ];
+	
+    var contrast_data = [ "000000","10151b","20252b","30353b","6c757d","ced6e0","dfe6e9","f0f4f4","f9f8f7","ffffff"]
+
+    document.title = "MayankDevil"
 }
 catch(error)
 {

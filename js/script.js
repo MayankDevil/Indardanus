@@ -1,8 +1,8 @@
 /*
 -   Website-0 "indardanus"
--   AllRightReserved Mayank
--   Designed by Mayank
--   JavaScript : js/script
+-   Copyright by https://github.com/MayankDevil/
+-   Designed | Developed by Mayank
+-   JavaScript : ./js/script.js
 */
 try
 {
@@ -10,7 +10,8 @@ try
         ============================================================================
         [ COLOR TESTER FUNCTION ] : set get colour in different forms
         ============================================================================
-    */ 
+    */
+    
     let clr_btn = document.getElementById('clr_btn');
 
     let clr_fld = document.getElementById('clr_fld');
@@ -26,9 +27,11 @@ try
         Color Field Function } on field change set color button
     */
     clr_fld.onkeyup = () => clr_btn.value = clr_fld.value;
+    
     /*
         Entity Function } copy the color field value
     */ 
+    
     clr_ent.onclick = () => {
         
         clr_fld.select();
@@ -41,11 +44,13 @@ try
         [ COLOUR PICTURE FUNCTION ] : set selected picture in frame default colourwheel
         ==================================================================================
     */ 
+    
     let clrpic = document.createElement('img');
 
     clrpic.className = 'clrpic';    // set class
 
     clrpic.src = `data/colourwheel.gif`;    // default colourwheel
+
     /*
         [ Set Image Function ] ====================================================
         

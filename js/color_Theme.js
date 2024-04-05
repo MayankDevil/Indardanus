@@ -1,8 +1,8 @@
 /*
 -   Website-0 "indardanus"
--   AllRightReserved Mayank
--   Designed by Mayank
--   JavaScript : js/color_Theme
+-   Copyright by https://github.com/MayankDevil/
+-   Designed | Developed by Mayank
+-   JavaScript : ./js/color_Theme.js
 */
 try
 {
