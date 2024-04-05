@@ -8,13 +8,13 @@
 
 - Update : 29-12-2023
 
-- Status : Rest
+- Status : REST
 
 - TecStack : { HTML | CSS | JavaScript }
 
 - Responsive : True
 
-- Thanks : { VSCodium | GitHub }
+- Thanks : { VSCodium | GitHub | GIMP }
 
 - Work : Self
 
@@ -22,7 +22,7 @@
 
 - Developer : { Mayank }
 
-- CopyRight : { Indardanus }
+- CopyRight : { Mayank }
 
 - URL : https://mayankdevil.github.io/Indardanus/
 
@@ -48,5 +48,11 @@ _Switch between dark and light that help to more effective view as day Nidht and
 
 _it theme difficult to set becuse it is colour website but I am make it simple and while theme with multiple colour theme._
 
+### Warning
 
+-- Copyright (c) by Mayank . All Right Reserved --
+
+__" Please refrain from unauthorized coping or downloading of content, as such actions are subject to legal consequences and potential charges.We encourage respectful and responsible use of the resouces provided for learning purpose."__
+
+[![Mayank](https://img.shields.io/badge/MayankDevil-FF0000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayankDevil/)
 
