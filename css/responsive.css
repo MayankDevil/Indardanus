@@ -1,8 +1,8 @@
 /*
 -   Website-0 "indardanus"
--   AllRightReserved Mayank
--   Designed by Mayank
--   CSS : css/style
+-   Copyright by https://github.com/MayankDevil/
+-   Designed | Developed by Mayank
+-   CSS : ./css/responsive.css
 */
 /*
 	1200PX SCREEN ----------------------
@@ -21,6 +21,10 @@
 		width: 90%;
 		margin:auto;
 	}
+	.package4
+    {
+        margin:3px;
+    }
 }
 /*
 	768PX SCREEN ----------------------
@@ -102,6 +106,12 @@
 		padding: 1rem 0;
 		grid-row:1/2;
 	}
+	
+	.package4
+    {
+        margin:1px;
+	    height: 10vh;
+    }
 }
 /*
 	576PX SCREEN ----------------------
@@ -135,6 +145,13 @@
 		padding: 0.3rem;
 		clip-path:none;
 	}
+	
+	.package4
+    {
+        margin:0;
+	    width: 11%;
+	    height: 5vh;
+    }
 }
 /*
 	350PX SCREEN ----------------------

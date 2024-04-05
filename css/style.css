@@ -1,8 +1,8 @@
 /*
 -   Website-0 "indardanus"
--   AllRightReserved Mayank
--   Designed by Mayank
--   CSS : css/style
+-   Copyright by https://github.com/MayankDevil/
+-   Designed | Developed by Mayank
+-   CSS : ./css/style.css
 */
 *
 {
@@ -381,16 +381,17 @@ p
 #bootpackage
 {
 	display: gird;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(9,1fr);
 }
 .package4
 {
-	width: 14%;
-	height: 10vh;
+    margin:4px;
+	width: 10%;
+	height: 15vh;
 	color: transparent;
 }
 /*
-FOOTER CSS --------------------------
+    FOOTER CSS --------------------------
 */
 #footer
 {
