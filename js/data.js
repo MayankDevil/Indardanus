@@ -80,8 +80,29 @@ try
         "cff4fc","9eeaf9","6edff6","3dd5f3","0dcaf0","0aa2c0","087990","055160","032830",
         "f8f9fa","e9ecef","dee2e6","ced4da","adb5bd","6c757d","495057","343a40","212529"
     ]
-    
+
     var old_bootstrap_data = ["6c757d","f8f9fa","e83e8c","20c997","17a2b8","6610f2","fd7e14","343a40","ffffff","dc3545","28a745","007bff","6f42c1","ffc107"]
+
+    /*
+        ------------------
+        [ Gradient Data ] ===============================================================
+        ------------------
+    */
+
+    var gradient_data = [
+        `linear-gradient(120deg, #ff0844 0%, #ffb199 100%)`,
+        `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`,
+        `linear-gradient(50deg, #43e97b 0%, #38f9d7 100%)`,
+        `linear-gradient(40deg, #3d8bfd 0%, #6edff6 100%)`,
+        `linear-gradient(200deg, #e685b5 0%, #dc3545 100%)`,
+        
+        
+        `linear-gradient(40deg, #ffda6a 0%, #4dd4ac 100%)`,
+        `linear-gradient(40deg, #dc3545, #8c68cd)`,
+        `linear-gradient(40deg, #8540f5, #3d8bfd)`,
+        `linear-gradient(40deg, #273c75, #7f8fa6)`,
+        `linear-gradient(to top, #95afc0 0%, #f5f6fa 100%)`,
+    ]
     
     /*
         ------------------
