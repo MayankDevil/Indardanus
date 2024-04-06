@@ -25,6 +25,11 @@
     {
         margin:3px;
     }
+	#gradientpackage
+	{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: 1rem auto;
+	}
 }
 /*
 	768PX SCREEN ----------------------
@@ -41,6 +46,15 @@
 		margin:auto;
 		padding: 5vh 0;
 		border-bottom: 1px solid var(--gray);
+	}
+	#gradient
+	{
+		width:90%;
+	}
+	#gradientpackage
+	{
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 1rem auto;
 	}
 	.row
 	{
@@ -152,6 +166,17 @@
 	    width: 11%;
 	    height: 5vh;
     }
+	#gradientpackage
+	{
+		grid-template-columns: 1fr;
+	}
+	.package5
+    {
+        margin: 1rem auto;
+	    width: 40vh;
+	    height: 40vh;
+		border-radius: 1rem;
+    }
 }
 /*
 	350PX SCREEN ----------------------
@@ -166,22 +191,4 @@
 }
 /*
 THE END =============================
-*/
-
-/*
-animation: colorChange 5s linear infinite alternate-reverse;
-@keyframes colorChange {
-	10%{
-		background:linear-gradient(to right,#eb3b5a,#fa8231,#f7b731);
-	}
-	30%{
-		background:linear-gradient(to right,#a55eea,#eb3b5a,#2bcbcc);
-	}
-	50%{
-		background:linear-gradient(to right,#a55eea,#2bcbcc,#833471);
-	}
-	100%{
-		background:linear-gradient(to left,#00a8ff,#1abc9c,#2ecc71);
-	}
-}
 */

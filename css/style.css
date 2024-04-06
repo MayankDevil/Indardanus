@@ -117,12 +117,11 @@ h1
 #header .service
 {
 	display: grid;
-	place-content: center right;
 	border-right: 2px groove var(--gray);
 }
 .btn
 {
-	display: inline-block;
+	display: block;
 	margin:0.5rem;
 	padding: 1rem 2rem;
 	text-align: right;
@@ -296,7 +295,7 @@ option
 /*
 	NICE CSS ----------------------------
 */
-section
+section:not([id='gradient'])
 {
 	width: 80%;
 	margin:auto;
@@ -332,12 +331,14 @@ p
 .package1:fullscreen,
 .package2:fullscreen,
 .package3:fullscreen,
-.package4:fullscreen
+.package4:fullscreen,
+.package5:fullscreen
 {
 	text-align: center;
-	font-size: 10vh;
+	font-size: 2em;
 	color:var(--light);
     text-shadow: 1px 1px 5px var(--black);
+	border-radius: 0;
 }
 /*
 	NAME CSS ----------------------------
@@ -389,6 +390,46 @@ p
 	width: 10%;
 	height: 15vh;
 	color: transparent;
+}
+/*
+	GRADIENT CSS ---------------------------
+*/
+#gradient
+{
+	width: 80%;
+	margin:auto;
+	padding: 10vh 0;
+	border-top: 5px solid var(--gray);
+}
+#gradientpackage
+{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin: 3rem auto 0 auto;
+}
+.package5
+{
+	height: 20vh;
+	width: 20vh;
+	margin: 1rem auto;
+	color: transparent;
+	text-align: center;
+	border-radius:50%;
+	/* clip-path: circle(45% at 50% 50%); */
+}
+.back_btn
+{
+	display: inline-block;
+	margin-right: 1rem;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: var(--light);
+	background: var(--black);
+}
+.back_btn:hover
+{
+	opacity: 0.8;
 }
 /*
     FOOTER CSS --------------------------
