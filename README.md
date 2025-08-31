@@ -1,58 +1,22 @@
-# website-0
+# 🌈 Indardanus  
 
-- Name : " Indardanus "
+_Indardanus is a creative platform designed to help you discover, explore, and apply beautiful ethical color schemes that enhance the visual identity of your projects. Whether you are a designer, developer, or a curious creator, Indardanus provides a refined set of palettes and themes that balance aesthetics with functionality. It encourages mindful use of colors, ensuring your projects look vibrant, accessible, and professional._
 
-- Description : "Discover the perfect color scheme for your Project"
+![Indardanus Home](./public/img/Indardanus.png "Indardanus Home")  
 
-- Version : main
-
-- Update : 29-12-2023
-
-- Status : REST
-
-- TecStack : { HTML | CSS | JavaScript }
-
-- Responsive : True
-
-- Thanks : { VSCodium | GitHub | GIMP }
-
-- Work : Self
-
-- Design : { Mayank }
-
-- Developer : { Mayank }
-
-- CopyRight : { Mayank }
-
-- URL : https://mayankdevil.github.io/Indardanus/
-
-- Clone : https://github.com/MayankDevil/Indardanus.git
-
-- Download : https://github.com/MayankDevil/Indardanus/archive/refs/heads/main.zip
+[![GitHub - MayankDevil](https://img.shields.io/badge/Visit%20Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayankDevil)  
+[![Live Website](https://img.shields.io/badge/Live%20Demo-00C853?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mayankdevil.github.io/Indardanus/)  
 
 ---
 
-#### Home Page
+## ⚠️ Legal Notice  
 
-![Alt text](./data/Indardanus.png "HomePage")
+> © 2025 Mayank – **All Rights Reserved**  
+>
+> 🚫 Unauthorized use, duplication, redistribution, or modification of this project, its content, or design is strictly prohibited.  
+>
+> 🛑 Any violation will be treated as a **serious legal offense** and may result in civil, financial, or criminal consequences under applicable law.  
+>
+> ✅ This project is shared for **educational and personal learning purposes only**. Please respect the intellectual property and creativity invested in its development.  
 
-### Responsive
-
-**Breakpoints** { 375 | 576 | 768 | 992 | 1200 }
-
-### Theme Mode
-
-_Switch between dark and light that help to more effective view as day Nidht and Battery Saving._
-
-### Theme
-
-_it theme difficult to set becuse it is colour website but I am make it simple and while theme with multiple colour theme._
-
-### Warning
-
--- Copyright (c) by Mayank . All Right Reserved --
-
-__" Please refrain from unauthorized coping or downloading of content, as such actions are subject to legal consequences and potential charges.We encourage respectful and responsible use of the resouces provided for learning purpose."__
-
-[![Mayank](https://img.shields.io/badge/MayankDevil-FF0000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayankDevil/)
-
+---

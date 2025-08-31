@@ -1,0 +1,27 @@
+{
+  "name": "indardanus",
+  "version": "2.0.1",
+  "description": "iscover the perfect color scheme for your Project",
+  "main": "index.html",
+  "scripts": {
+    "test": "node src/js/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://mayankdevil.github.io/Indardanus"
+  },
+  "keywords": [
+    "Indardanus",
+    "Colour",
+    "Scheme",
+    "Colour",
+    "Packages",
+    "Colour",
+    "Name",
+    "Hexdecimal",
+    "Mayank",
+    "Colour"
+  ],
+  "author": "Mayank",
+  "license": "ISC"
+}

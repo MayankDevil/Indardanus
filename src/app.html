@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- 
+-   Website-0 "indardanus"
+-   HTML : ./index.html
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indardanus</title>
+    <!-- description -->
+    <meta name="description" content="Indardanus is a beautiful, fast, and interactive color generator that helps you explore, copy, and apply perfect color palettes, gradients, and Bootstrap themes." />
+    <!-- keywords -->
+    <meta name="keywords" content="color generator, color picker, hex colors, gradient generator, bootstrap colors, color palette, CSS colors, Indardanus, MayankDevil" />
+    <!-- author -->
+    <meta name="author" content="Mayank Devil" />
+    <!-- open graph meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mayankdevil.github.io/Indardanus" />
+    <meta property="og:title" content="Indardanus - Color Generator & Palette Picker" />
+    <meta property="og:description" content="Explore and copy beautiful color schemes, gradients, and UI palettes with Indardanus. Built for developers, designers, and creatives." />
+    <meta property="og:image" content="https://mayankdevil.github.io/Indardanus/public/img/indardanus-preview.png" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Indardanus - Color Generator & Palette Picker" />
+    <meta name="twitter:description" content="Explore and copy beautiful color schemes, gradients, and UI palettes with Indardanus." />
+    <meta name="twitter:image" content="https://mayankdevil.github.io/Indardanus/public/img/indardanus-preview.png" />
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://mayankdevil.github.io/Indardanus" />
+
+    <!--
+        --------- 
+        | style |
+        ---------
+    -->
+    <link rel="stylesheet" href="../assets/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!--
+        ---------- 
+        | script |
+        ----------
+    -->
+    <script src="../assets/jQuery.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+<body class="">
+
+    <main class="" id="root">
+        <!--
+            ------------------
+            [ header section ]
+            ------------------
+        -->
+        <section>
+
+            <nav id="nav">
+                
+                <h2> GRADIENT COLOUR </h2>
+                
+                <div class="group">
+                    <a href="../index.html"> Home </a> / <span> App </span>
+                </div>    
+            </nav>
+
+        </section>
+        
+        
+        <section class="" id="">
+            
+            <p> this will start soon but not today. </p>
+
+            <div id="gradientpackage">
+
+                <script>
+
+                    // console.log(hijack.data.gradient) // hack
+
+                    $.each(hijack.data.gradient, function (index, value) {
+
+                        console.log(value)
+                        
+                        const element = document.createElement('input')
+    
+                        element.classList.add('package5')
+                        element.type = 'text'
+                        element.style.padding = '1rem'
+                        element.style.borderRadius = '0'
+                        element.value = value
+                        element.style.background = value
+    
+                        document.getElementById('gradientpackage').append(element)
+    
+                        /* element on mousenter show colour name in screen  */
+            
+                        element.onmouseenter = () => {
+                            
+                            if (isHex !== null) 
+                            {
+                                document.getElementById(isHex).style.background = element.value
+                            }
+                        }
+                            
+                        /* element on click copy and full screen colour */
+
+                        element.onclick = () => {
+                            
+                            element.select();
+                            document.execCommand("Copy")
+
+                            if (document.fullscreenEnabled) 
+                            {
+                                element.requestFullscreen()
+                                setTimeout(() => { 
+                                    document.exitFullscreen()
+                                }, 1500)
+                            }
+                        }
+                    })
+
+                </script>
+
+            </div>
+
+        </section>
+
+        <!--
+            ------------------
+            [ footer section ]
+            ------------------
+        -->
+        <footer id="footer">
+            
+            <a href="#header" id="scrollup_btn"> &ShortUpArrow; </a>
+            <button class="bi bi-list btn" id="toggle_btn"></button>
+
+
+            <div class="colorGraph"></div>
+
+            <div class="copyright">
+                <div> Indardanus &copy; All Right Reserved | Developer by <a href="https://mayankdevil.github.io/MayankDevil" target="_blank" title="Indardanus Developered by Mayank" id="developerAnchor"> Mayank </a> </div>
+                <div id="social">
+                    <a href="https://github.com/MayankDevil" title="github : MayankDevil" target="_blank" class="btn bi bi-github media"></a>
+                    <a href="https://www.linkedin.com/in/MasterMayank" title="linkedin : MasterMayank" target="_blank" class="btn bi bi-linkedin media"></a>
+                </div>
+            </div>
+        </footer>
+    
+    </main>
+
+</body>
+
+</html>
+<!-- Developer: Mayank Devil | https://mayankdevil.github.io/MayankDevil -->

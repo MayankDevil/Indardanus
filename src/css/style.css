@@ -1,0 +1,533 @@
+/*
+-   Website-0 "indardanus"
+-   File: src/css/style.js
+*/
+
+*
+{
+    user-select: text;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+	color:var(--dark8);
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+}
+
+::selection
+{
+    background: none;
+}
+
+:root
+{
+    --primary:#DC143C;
+    --white:#ffffff;
+    --black:#000000;
+    --dark0:#f8f9fa;
+    --dark1:#e9ecef;
+    --dark2:#dee2e6;
+    --dark3:#ced4da;
+    --dark4:#adb5bd;
+    --dark5:#6c757d;
+    --dark6:#495057;
+    --dark7:#343a40;
+    --dark8:#212529;
+}
+.dark
+{
+    --primary:#DC143C;
+    --black:#ffffff;
+    --white:#000000;
+    --dark8:#f8f9fa;
+    --dark7:#e9ecef;
+    --dark6:#dee2e6;
+    --dark5:#ced4da;
+    --dark4:#adb5bd;
+    --dark3:#6c757d;
+    --dark2:#495057;
+    --dark1:#343a40;
+    --dark0:#212529;
+}
+
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(90deg, var(--white), var(--dark0));
+}
+
+.colorSlide
+{
+	padding: 5rem;
+	background: linear-gradient(to right, purple,crimson,salmon,greenyellow,lime,cyan,springgreen);
+	clip-path:polygon(0% 0%, 0 100%, 0% 100%, 15% 90%, 25% 60%, 40% 40%, 50% 70%, 65% 30%, 80% 30%, 90% 0);
+}
+
+.colorGraph
+{
+	padding: 5px;
+	background: linear-gradient(to right, purple,crimson,salmon,greenyellow,lime,cyan,springgreen);
+	/* clip-path:polygon(1% 100%, 0% 100%,  99% 100%, 95% 0%,
+		90% 50%, 85% 50%, 83% 60%,
+		80% 10%, 77% 50%,
+		70% 50%, 67% 70%,
+		60% 80%, 55% 30%,
+		50% 50%, 45% 20%,
+		40% 70%, 38% 80%, 35% 50%,
+		30% 30%, 29% 50%, 24% 75%,
+		20% 50%, 18% 20%, 15% 80%,
+		10% 0%, 7% 50%, 4% 30%
+	); */
+}
+
+.btn
+{
+    padding: 0.5rem 1rem;
+    font-size:1rem;
+    color: var(--dark0);
+    background:var(--black);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--dark8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover
+{
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--dark7);
+}
+
+#toggle_btn
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 12;
+	right:2vw;
+	bottom: 5vh;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
+	border-radius: 5px;
+}
+
+h1
+{
+	padding: 3rem 0;
+	font-size:10vw;
+    font-weight: lighter;
+	color:var(--black);
+    /* color: transparent; */
+	/* background: linear-gradient(to right,black, purple,crimson,salmon,greenyellow,lime,cyan,springgreen); */
+    /* background-clip: text; */
+	text-shadow:5px 5px 10px var(--dark4);
+}
+h2
+{
+	padding: 1rem;
+	text-transform: uppercase;
+	word-spacing: 5px;
+	font-size:1.5rem;
+	font-weight: normal;
+	color:var(--black);
+}
+h4
+{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--dark5);
+}
+p
+{
+	padding: 2rem 1rem;
+	line-height: 30px;
+	font-size:1.1rem;
+}
+
+/*
+	HEADER CSS --------------------------
+*/
+
+#header
+{
+	min-height:80vh;
+}
+#header .row
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin:auto;
+}
+
+/* navbar */
+
+#navbar
+{
+    display: block;
+	margin-left: auto;
+	border-right: 2px groove var(--dark2);
+}
+.nav_link
+{
+	display: block;
+	text-align: right;
+    padding: 1rem;
+}
+.nav_link::after
+{
+	content: '';
+    display: inline-block;
+    margin-right: -1.7rem;
+    margin-left: 2rem;
+    padding: 5px;
+    background: var(--dark0);
+    border:5px solid var(--primary);
+    border-radius: 50%;
+}
+.nav_link:hover
+{
+	font-weight: bold;
+}
+.nav_link:hover::after
+{
+	background: var(--primary);
+	border-color: var(--dark0);
+}
+
+#nav
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#nav .group
+{
+	padding: 10px 20px;
+	color: var(--primary);
+	background: var(--dark8);
+	border-radius: 10px;
+}
+#nav .group span
+{
+	display: inline-block;
+	padding: 0 0;
+	margin: 0;
+	color:var(--dark3);
+}
+#nav .group a
+{
+	color:var(--dark0);
+}
+#nav .group a:hover
+{
+	color:var(--dark4);
+}
+
+/* colour picker */
+
+#colourPicker
+{
+	width: 100%;
+	margin:3rem 0;
+	display: grid;
+    background: var(--white);
+	grid-template-columns: 1fr 1fr;
+	box-shadow: 0 0 10px var(--dark2);
+}
+#colourPicker div
+{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+#copyButton
+{
+    padding: 5px 10px;
+    font-size: 1.5rem;
+}
+#copyButton:hover
+{
+	color:var(--dark2);
+}
+#colorButton
+{
+	width: 100%;
+	height: auto;
+    /* aspect-ratio: 4/1; */
+}
+#colorField
+{
+	text-align: center;
+	font-size:1.5rem;
+	color:var(--dark8);
+}
+#colorField::selection
+{
+	background:#80bfff;
+}
+/*
+	THEORY CSS --------------------------
+*/
+#theory
+{
+    display: none;
+}
+#colourwheel
+{
+	padding: 1rem;
+	font-size: 1rem;
+}
+#combination
+{
+	display: grid;
+	grid-gap:1rem;
+	padding: 2rem 1rem;
+}
+label input[type="radio"]:checked ~ i
+{
+	color:var(--black);
+	font-weight: bold;
+}
+
+#colorWheel {
+display: block;
+margin: 1rem auto;
+}
+.active-slice {
+stroke: var(--black);
+stroke-width: 1;
+}
+
+/*
+	THEME CSS ---------------------------
+*/
+#themes
+{
+	height: 50vh;
+	display: grid;
+	grid-template-rows: 9fr 1fr;
+	background: var(--white);
+}
+#compareBox
+{
+	height: 100%;
+	display: grid;
+    grid-gap:5px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	box-shadow: 1px 1px 5px var(--dark1);
+}
+.colorBox
+{
+	padding: 2rem 1rem;
+	writing-mode: sideways-lr;
+	resize: none;
+	text-align: right;
+	font-size:1rem;
+	color:var(--white);
+    border-radius: 5px;
+	text-shadow:1px 1px 3px var(--dark0);
+}
+#compareButton
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    padding: 1rem 0;
+}
+.flag
+{
+	margin:0.5rem;
+	padding: 0.2rem 0.5rem ;
+	background: var(--dark8);
+}
+.flag:hover
+{
+    box-shadow: none;
+    color:var(--dark8);
+    background: var(--dark0);
+}
+span
+{
+	margin:1rem;
+}
+#selectFrame
+{
+	padding: 1rem;
+	font-size:1rem;
+	color:var(--dark);
+	border:1px solid var(--dark2);
+}
+option
+{
+	padding: 1rem;
+}
+/*
+	NICE CSS ----------------------------
+*/
+section:not([id='gradient'])
+{
+	width: 80%;
+	margin:auto;
+	padding: 10vh 0;
+	border-bottom: 5px solid var(--dark4);
+}
+
+#nicepackage
+{
+	display: grid;
+	grid-template-columns: repeat(5,20%);
+}
+.package1
+{
+	color: transparent;
+	display: grid;
+	place-content: center;
+}
+.package1:fullscreen,
+.package2:fullscreen,
+.package3:fullscreen,
+.package4:fullscreen,
+.package5:fullscreen
+{
+	text-align: center;
+	font-size: 2em;
+	color:var(--white);
+    text-shadow: 1px 1px 5px var(--black);
+	border-radius: 0;
+}
+/*
+	NAME CSS ----------------------------
+*/
+#namepackage
+{
+	display:grid;
+	grid-template-columns:repeat(138,0.7%);
+}
+.package2
+{
+	height: 10vh;
+	text-transform:uppercase;
+	text-align: center;
+	font-size: 1rem;
+	color: transparent;
+}
+#color_plate
+{
+	width: 100%;
+	height: 40vh;
+	background:black;
+}
+/*
+	CONTRAST CSS ----------------------------
+*/
+#contrastpackage
+{
+	display: gird;
+	box-shadow: 1px 1px 3px var(--dark4);
+}
+.package3
+{
+	width: 10%;
+	height: 20vh;
+	color: transparent;
+}
+/*
+	BOOTSTRAP CSS ---------------------------
+*/
+#bootpackage
+{
+	display: gird;
+	grid-template-columns: repeat(9,1fr);
+}
+.package4
+{
+    margin:4px;
+	width: 10%;
+	height: 15vh;
+	color: transparent;
+}
+/*
+	GRADIENT CSS ---------------------------
+*/
+#gradient
+{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin: 3rem auto 0 auto;
+}
+.package5
+{
+	height: 20vh;
+	width: 20vh;
+	margin: 1rem;
+	color: transparent;
+	text-align: center;
+	/* border-radius: 10%; */
+	/* clip-path: circle(45% at 50% 50%); */
+}
+/*
+    FOOTER CSS --------------------------
+*/
+#footer
+{
+	margin-top: 2rem;
+}
+#scrollup_btn
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 10;
+	right:2vw;
+	bottom: 5vh;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
+	background: var(--primary);
+	border-radius: 5px;
+	transform: rotate(0deg) scale(0.8);
+}
+#scrollup_btn:hover
+{
+	transition: all linear 0.5s;
+	transform: rotate(360deg) scale(1);
+}
+#footer .copyright
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 3rem 10vw;
+	font-size: 1rem;
+	background: var(--light);
+}
+#footer .copyright a
+{
+	display: inline-block;
+    font-size: large;
+	font-weight: bold;
+}
+#social .media
+{
+    padding: 5px 10px;
+    color: var(--dark8);
+    background: transparent;
+}
+
+/* Developer: Mayank Devil | https://mayankdevil.github.io/MayankDevil */

@@ -1,258 +1,279 @@
 <!DOCTYPE html>
-<!--
+<!-- 
 -   Website-0 "indardanus"
--   Copyright by https://github.com/MayankDevil/
--   Designed | Developed by Mayank
 -   HTML : ./index.html
 -->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayank</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indardanus</title>
+    <!-- description -->
+    <meta name="description" content="Indardanus is a beautiful, fast, and interactive color generator that helps you explore, copy, and apply perfect color palettes, gradients, and Bootstrap themes." />
+    <!-- keywords -->
+    <meta name="keywords" content="color generator, color picker, hex colors, gradient generator, bootstrap colors, color palette, CSS colors, Indardanus, MayankDevil" />
+    <!-- author -->
+    <meta name="author" content="Mayank Devil" />
+    <!-- open graph meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mayankdevil.github.io/Indardanus" />
+    <meta property="og:title" content="Indardanus - Color Generator & Palette Picker" />
+    <meta property="og:description" content="Explore and copy beautiful color schemes, gradients, and UI palettes with Indardanus. Built for developers, designers, and creatives." />
+    <meta property="og:image" content="https://mayankdevil.github.io/Indardanus/public/img/indardanus-preview.png" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Indardanus - Color Generator & Palette Picker" />
+    <meta name="twitter:description" content="Explore and copy beautiful color schemes, gradients, and UI palettes with Indardanus." />
+    <meta name="twitter:image" content="https://mayankdevil.github.io/Indardanus/public/img/indardanus-preview.png" />
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://mayankdevil.github.io/Indardanus" />
+
     <!--
-        { style section } -----------------------------------------------------------------
+        --------- 
+        | style |
+        ---------
     -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+
+    <!--
+        ---------- 
+        | script |
+        ----------
+    -->
+    <script src="assets/jQuery.min.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/script.js"></script>
+
 </head>
 
-<body>
-    <!--
-        { mother section } ----------------------------------------------------------------
-    -->
-    <main id="mother_container">
+<body class="">
+
+    <main class="" id="root">
         <!--
-            [ header section ] --------------------------------------------------------------
+            ------------------
+            [ header section ]
+            ------------------
         -->
         <header id="header">
-            <!-- ( colorslide ) -->
             <div class="colorSlide"></div>
 
             <div class="row">
-                <!-- ( heading ) -->
-                <div class="intro">
+                <div class="col">
+                    <h1>Indardanus</h1>
 
-                    <h1> Indardanus </h1>
+                    <h4> Indardanus is an online platform that provides a variety of color schemes for your projects while ensuring that you are making ethical choices. </h4>
 
-                    <p> Indardanus is an online platform that provides a variety of color schemes for your projects while ensuring that you are making ethical choices. </p>
-
-                    <!-- ( color box ) -->
-                    <div id="colorTester">
-                        <input type="color" name="colorset" id="clr_btn">
-                        <input type="text" name="colorget" id="clr_fld">
-                        <span id="clr_ent"> &#9998; </span>
+                    <div id="colourPicker">
+                        <input type="color" name="colorset" id="colorButton" />
+                        <div>
+                            <input type="text" name="colorget" id="colorField" />
+                            <span class="btn bi bi-clipboard" id="copyButton"></span>
+                        </div>
                     </div>
-
                 </div>
-                <!-- service -->
-                <div class="service">
 
-                    <a href="#" class="btn" id="dark-mode-btn"> Body Theme &ShortRightArrow;</a>
-                    <a href="#theory" class="btn"> Colour Theory &ShortRightArrow;</a>
-                    <a href="#contrast" class="btn"> Colour Contrast &ShortRightArrow;</a>
-                    <a href="#name" class="btn"> Colour Name &ShortRightArrow;</a>
-                    <a href="#nice" class="btn"> Nice Colour Scheme &ShortRightArrow;</a>
-                    <a href="#theme" class="btn"> Theme Selection &ShortRightArrow;</a>
-                    <a href="#bootstrap" class="btn"> Bootstrap Colour &ShortRightArrow;</a>
-                    <a href="gradient.html" class="btn"> Gradient Colour &ShortRightArrow;</a>
-                    <a href="#footer" class="btn"> About Me  &ShortRightArrow;</a>
-
+                <div class="col" id="nav">
+                    <nav id="navbar">
+                        <!-- <a href="#theory" class="nav_link"> Colour Theory </a> -->
+                        <a href="#contrast" class="nav_link"> Colour Contrast </a>
+                        <a href="#name" class="nav_link"> Colour Name </a>
+                        <a href="#nice" class="nav_link"> Nice Colour Scheme </a>
+                        <a href="#theme" class="nav_link"> Theme Selection </a>
+                        <a href="#bootstrap" class="nav_link"> Bootstrap Colour </a>
+                        <a href="src/app.html" class="nav_link"> Gradient Colour </a>
+                        <a href="#colourPicker" class="nav_link"> Colour Picker </a>
+                    </nav>
                 </div>
-            
             </div>
-
         </header>
         <!--
-            [ theory section ] --------------------------------------------------------------
+            ------------------
+            [ theory section ]
+            ------------------
         -->
         <section class="row" id="theory">
             <!-- ( left ) -->
             <div id="combination_input">
-                
-                <h2> Colour Theory </h2>
-                
-                <div id="colourwheel">
-                    
-                    {&nbsp; Primary &RightArrow; Secondary &RightArrow; Tertiary &nbsp;}
+                <h2>Colour Theory</h2>
 
+                <div id="colourwheel">
+                    {&nbsp; Primary &RightArrow; Secondary &RightArrow; Tertiary &nbsp;}
                 </div>
                 <!-- ( combination ) -->
                 <div id="combination">
-				
-					<label>
-						<input type="radio" name="combine" value="monochromatic">
-						<i> monochromatic </i>
-					</label>
-					
-					<label>
-						<input type="radio" name="combine" value="complementary">
-						<i> complementary </i>
-					</label>
-					<label>
-						<input type="radio" name="combine" value="triadic">
-						<i> triadic </i>
-					</label>
-					
-					<label>
-						<input type="radio" name="combine" value="rectangular">
-						<i> rectangular </i>
-					</label>
-					
-					<label>
-						<input type="radio" name="combine" value="tetradic">
-						<i> tetradic </i>
-					</label>
-					
-					<label>
-						<input type="radio" name="combine" value="analogous">
-						<i> analogous </i>
-					</label>
-					
-					<label>
-						<input type="radio" name="combine" value="analogouscomplementary">
-						<i> analogus complementary </i>
-					</label>
-					
-					<label>
-						<input type="radio" name="combine" value="splitcomplementary">
-						<i> split complementary </i>
-					</label>
-				
-				</div>
+                    <label>
+                        <input type="radio" name="combine" value="monochromatic" />
+                        <i> monochromatic </i>
+                    </label>
 
+                    <label>
+                    <input type="radio" name="combine" value="complementary" />
+                    <i> complementary </i>
+                    </label>
+                    <label>
+                    <input type="radio" name="combine" value="triadic" />
+                    <i> triadic </i>
+                    </label>
+
+                    <label>
+                    <input type="radio" name="combine" value="rectangular" />
+                    <i> rectangular </i>
+                    </label>
+
+                    <label>
+                    <input type="radio" name="combine" value="tetradic" />
+                    <i> tetradic </i>
+                    </label>
+
+                    <label>
+                    <input type="radio" name="combine" value="analogous" />
+                    <i> analogous </i>
+                    </label>
+
+                    <label>
+                    <input
+                        type="radio"
+                        name="combine"
+                        value="analogouscomplementary" />
+                    <i> analogus complementary </i>
+                    </label>
+
+                    <label>
+                    <input type="radio" name="combine" value="splitcomplementary" />
+                    <i> split complementary </i>
+                    </label>
+                </div>
             </div>
-            <!-- ( theory picture frame ) -->
-            <div id="combination_output">
-                <!-- <img src="data/analogous.gif" alt="" id="clrpic"> -->
+            <div id="colourwheel">
+            <svg id="colorWheel" width="300" height="300" viewBox="0 0 300 300"></svg>
             </div>
-            
         </section>
         <!--
-            [ nice section ] --------------------------------------------------------------
+            ----------------
+            [ nice section ] 
+            ----------------
         -->
         <section id="nice">
-
-            <h2> Nice Colour Package </h2>
-
+            
+            <h2><span class="bi bi-gift-fill"></span> Nice Colour Package</h2>
             <p> To use the <b>HexaDecimal</b> color package, select a color from the <b>Analogous</b> color theme and click on it. The color code will be automatically copied to your system’s clipboard in hexadecimal format. </p>
 
             <div id="nicepackage"></div>
 
         </section>
         <!--
-            [ theme section ] --------------------------------------------------------------
+            -----------------
+            [ theme section ]
+            -----------------
         -->
         <section id="theme">
+        
+            <h2><span class="bi bi-cpu"></span> Color Theme</h2>
 
-            <h2> Color Theme </h2>
+            <p> It is a useful tool that helps you select and compare colors to find the perfect shade. You can generate new colors by clicking the <b>‘Generate’</b> button, and choose a color by clicking on the corresponding <b>flag</b>. To copy the hexadecimal color code, <b>double-click</b>.</p>
 
-            <p> It is a useful tool that helps you select and compare colors to find the perfect shade. You can generate new colors by clicking the <b>‘Generate’</b> button, and choose a color by clicking on the corresponding <b>flag</b>. To copy the hexadecimal color code, <b>double-click</b>. </p>
-
-            <!-- ( color compare box ) -->
             <div id="themes">
                 <div id="compareBox">
-                    <textarea class="clrBox"></textarea>
-                    <textarea class="clrBox"></textarea>
-                    <textarea class="clrBox"></textarea>
-                    <textarea class="clrBox"></textarea>
-                    <textarea class="clrBox"></textarea>
+                    <textarea class="colorBox"></textarea>
+                    <textarea class="colorBox"></textarea>
+                    <textarea class="colorBox"></textarea>
+                    <textarea class="colorBox"></textarea>
+                    <textarea class="colorBox"></textarea>
                 </div>
+
                 <div id="compareButton">
                     <div>
-                        <button id="genrate_btn"> Genrate </button>
-                        <button id="fulscrn_btn"> FullScreen </button>
+                        <button class="btn" id="genrate_btn">Genrate</button>
+                        <button class="btn" id="fullscreen_btn">FullScreen</button>
                     </div>
                     <div>
-                        <span class="ent_flg">&#9872;</span>
-                        <span class="ent_flg">&#9872;</span>
-                        <span class="ent_flg">&#9872;</span>
-                        <span class="ent_flg">&#9872;</span>
-                        <span class="ent_flg">&#9872;</span>
+                        <span class="btn flag">&#9872;</span>
+                        <span class="btn flag">&#9872;</span>
+                        <span class="btn flag">&#9872;</span>
+                        <span class="btn flag">&#9872;</span>
+                        <span class="btn flag">&#9872;</span>
                     </div>
                 </div>
             </div>
-
         </section>
         <!--
-            [ name section ] --------------------------------------------------------------
+            ----------------
+            [ name section ]
+            ----------------
         -->
         <section id="name">
-
-            <h2> Colour Name Package </h2>
+            <h2><span class="bi bi-award-fill"></span> Colour Name Package</h2>
 
             <p> To use this package, you can <b>hover over the color slide</b> that sets the color in the frame. On <b>clicking the frame</b>, the color name will be copied to the clipboard. </p>
 
             <div class="colorname">
-
                 <div id="color_plate"></div>
 
                 <div id="namepackage"></div>
-
             </div>
-            
         </section>
         <!--
-            [ contrast section ] --------------------------------------------------------------
+            --------------------
+            [ contrast section ]
+            --------------------
         -->
         <section id="contrast">
-
-            <h2> Colour Contrast </h2>
+            
+            <h2><span class="bi bi-circle-half"></span> Colour Contrast</h2>
 
             <p> The colors <b>white</b> and <b>black</b> are considered to be the most versatile colors as they match well with any other color. In color contrast, the darker version of a color is called a <b>shade</b>, while the lighter version is called a <b>tint</b>. </p>
 
             <div id=""></div>
-            
+
             <div id="contrastpackage"></div>
-            
+        
         </section>
         <!--
-            [ bootstrap section ] --------------------------------------------------------------
+            ---------------------
+            [ bootstrap section ]
+            ---------------------
         -->
         <section id="bootstrap">
-
-            <h2> Bootstrap Colour </h2>
+            <h2><span class="bi bi-bootstrap"></span> Bootstrap Colour</h2>
 
             <p> Bootstrap is nice frame work in market that colour scheme is very <b>professional theme</b> that some touch we are present below. </p>
 
             <div id=""></div>
-            
+
             <div id="bootpackage"></div>
-            
+        
         </section>
+
         <!--
-            [ footer section ] --------------------------------------------------------------
+            ------------------
+            [ footer section ]
+            ------------------
         -->
         <footer id="footer">
+            
+            <a href="#header" id="scrollup_btn"> &ShortUpArrow; </a>
+            <button class="bi bi-list btn" id="toggle_btn"></button>
 
-            <!-- ( scroll button ) -->
-            <a href="#" id="scrl_btn"> &ShortUpArrow; </a>
-            <!-- ( graph slide ) -->
+
             <div class="colorGraph"></div>
-            <!-- ( copyright ) -->
-            <h6 id="copyright">
 
-                <div> <a href="#">Indardanus </a> &copy; All Right Reserved</div>
-                
-                <div> Designed by <a href="https://mastermayank.w3spaces.com" target="_blank"> Mayank </a> </div>
-
-            </h6>
-
+            <div class="copyright">
+                <div> Indardanus &copy; All Right Reserved | Developer by <a href="https://mayankdevil.github.io/MayankDevil" target="_blank" title="Indardanus Developered by Mayank" id="developerAnchor"> Mayank </a> </div>
+                <div id="social">
+                    <a href="https://github.com/MayankDevil" title="github : MayankDevil" target="_blank" class="btn bi bi-github media"></a>
+                    <a href="https://www.linkedin.com/in/MasterMayank" title="linkedin : MasterMayank" target="_blank" class="btn bi bi-linkedin media"></a>
+                </div>
+            </div>
         </footer>
-
+    
     </main>
-    <!--
-        { script section }-----------------------------------------------------------------
-    -->
-    <script src="js/data.js"></script>
-    <script src="js/color_Theme.js"></script>
-    <script src="js/color_Display.js"></script>
-    <script src="js/dark_Mode.js"></script>
-    <script src="js/script.js"></script>
 
 </body>
 
 </html>
-<!-- THE END -->
+<!-- Developer: Mayank Devil | https://mayankdevil.github.io/MayankDevil -->
